@@ -176,7 +176,7 @@ def hanger_boot_sequence(
     # Leave the robot in balance-mode 0 (static) – callers can switch to
     # continuous gait (balance-mode 1) when they actually want to walk.
 
-    bot.Start(); show("start")
+    bot.SetFsmId(500); show("Walk ")
 
     # Caller can now send velocity commands.
     return bot
